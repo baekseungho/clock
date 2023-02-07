@@ -56,6 +56,38 @@ li{
   height: 100vh;
   z-index: -100;
   background-image: url(./img/bg_morning.jpg);
+  overflow: hidden;
+}
+
+.back img{
+  position: relative;
+  animation: loop 50s infinite;
+}
+
+.cloud-box{
+  position: absolute;
+  top: 100px;
+  left: 135px;
+  width: 550px;
+  overflow: hidden;
+}
+.clock-box img{
+  animation: loop 50s infinite;
+  height: 250px;
+}
+@keyframes loop{
+  0%{
+    top:0px;
+    left:-40%;
+  }
+  50%{
+    top:0px;
+    left:40%;
+  }
+  100%{
+    top:0px;
+    left:-40%;    
+  }
 }
 
 .text-box{

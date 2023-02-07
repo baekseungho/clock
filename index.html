@@ -4,10 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <title>Clock</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="wrapper">
+    <header>
+      <div class="gnb-main">
+        <h1 class="logo">
+          <a href="./index.html">
+            <img src="./img/logo_b.png">
+          </a>
+        </h1>
+        <nav>
+          <ul class="gnb-main-list">
+            <li class="gnb-main-item"><a href="">About</a></li>
+            <li class="gnb-main-item"><a href="">Company</a></li>
+            <li class="gnb-main-item"><a href="">History</a></li>
+            <li class="gnb-main-item"><a href="">Community</a></li>
+            <li class="gnb-main-item"><a href="">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="back">
+        <div class="text-box">
+          <h1>Lorem<span> Ipsum</span></h1>
+          <p><span>Lorem Ipsum is simply dummy text of the printing Materials</span></p>
+        </div>
+        <div class="clock-box">
+          <div id="time">
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="fnb-list">
+        <div class="inputbox">
+          <input type="radio" name="when" value="0">
+          morning
+        </div>
+        <div class="inputbox">
+          <input type="radio" name="when" value="1">
+          afternoon
+        </div>
+        <div class="inputbox">
+          <input type="radio" name="when" value="2">
+          evening
+        </div>
+        <div class="inputbox">
+          <input type="radio" name="when" value="3">
+          night
+        </div>
+      </div>
+    </footer>
+  </div>
   <script src="./js/script.js"></script>
 </body>
 </html>

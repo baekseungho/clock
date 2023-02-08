@@ -37,24 +37,28 @@ $('.fnb-list .inputbox').click(function(e){
     $('.logo img').attr("src","./img/logo_b.png")
     $('header a').css("color","#000");
     $('main').css("color","#000");
+    $('.gnb-main-item').removeClass('whiteline');
   }else if($(this).children('input[type="radio"]').val()==1){
     $('.back').css({"background-image":"url(./img/bg_afternoon.jpg)"});
     $('.clock-box').css({"background-image":"url(./img/phone_afternoon.png)"});
     $('.logo img').attr("src","./img/logo_b.png")
     $('header a').css("color","#000");
     $('main').css("color","#000");
+    $('.gnb-main-item').removeClass('whiteline');
   }else if($(this).children('input[type="radio"]').val()==2){
     $('.back').css({"background-image":"url(./img/bg_evening.jpg)"});
     $('.clock-box').css({"background-image":"url(./img/phone_evening.png)"});
     $('.logo img').attr("src","./img/logo_b.png")
     $('header a').css("color","#000");
     $('main').css("color","#000");
+    $('.gnb-main-item').removeClass('whiteline');
   }else if($(this).children('input[type="radio"]').val()==3){
     $('.back').css({"background-image":"url(./img/bg_night.jpg)"});
     $('.clock-box').css({"background-image":"url(./img/phone_night.png)"});
     $('.logo img').attr("src","./img/logo_w.png");
     $('header a').css("color","#fff");
     $('main').css("color", "#fff");
+    $('.gnb-main-item').addClass('whiteline');
   }
 });
 

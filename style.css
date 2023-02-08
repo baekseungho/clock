@@ -48,6 +48,25 @@ li{
   font-weight: 600;
 }
 
+.gnb-main-item::after{
+  content: "";
+  display: block;
+  background-color: #333;
+  scale: 0%;
+  transition: all 400ms ease-in-out;
+}
+
+.gnb-main-item.whiteline::after{
+  background-color: #fff;
+}
+
+.gnb-main-item:hover::after{
+  content: "";
+  display: block;
+  scale: 100%;
+  height: 3px;
+  margin-top: 4px;
+}
 .back{
   position: absolute;
   top: 0;
